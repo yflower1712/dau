@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="조영준"/>
+    <meta name="keywords" content="big data, django, python"/>
+    <title>Welcome to YeongJun Shopping Mall</title>
+    <script src="https://kit.fontawesome.com/ff0bf49507.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <!--header+nav+section>article*3+aside^footer-->
+    <header id="home">
+        <i class="fa-solid fa-bars"></i>
+        <h1>YeongJun Site</h1>
+    </header>
+    <nav>
+        <!--ul>li*5>a{메인메뉴$}-->
+        <ul>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">쇼핑몰</a></li>
+            <li><a href="#">패키지</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="./gallery.html">갤러리</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="content">
+        <article>
+            <div class="photo"> <!--. : class, # : id-->
+                <img src="./images/bigdata.jpg" alt="bigdata image">
+            </div>
+            <div class="action">
+                <h2>대외활동리스트</h2>
+                <!--table>tr>th*3^tr*3>td*3-->
+                <table>
+                    <tr>
+                        <th>기간</th>
+                        <th>대외활동</th>
+                        <th>주최</th>
+                    </tr>
+                    <tr>
+                        <td>2021.03.</td>
+                        <td>마케팅전략 경진대회</td>
+                        <td>정보시스템학회</td>
+                    </tr>
+                    <tr>
+                        <td>2022.05.</td>
+                        <td>롯데 빅데이터 경진대회</td>
+                        <td>롯데그룹</td>
+                    </tr>
+                    <tr>
+                        <td>2022.08.</td>
+                        <td>머신러닝 교육프로그램</td>
+                        <td>동아대학교</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <br><br>
+        <article>
+            <div class="media">
+                <h2>좋아하는 음악</h2>
+                <audio src="./media/music01.mp3" controls></audio>
+                <br>
+                <h2>북극곰을 살리자</h2>
+                <video src="./media/movie.mp4" controls width="50%"></video>
+                <h2>Dr. Livesey walking</h2>
+                <iframe width="1217" height="685" src="https://www.youtube.com/embed/6XglcbMssJs" title="Rom and Death Meme | Dr. Livesey Phonk Walk | Ghostface Playa - Why Not" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+        <article>
+            <div class="gallery">
+                <iframe src="./gallery.html" width="60%" height="300" frameborder="0"></iframe>
+            </div>
+        </article></div>
+        <aside class="right">
+            <div class="login">
+                <form action="#" method="post">
+                    회원ID:<input type="text" name="id" id=""><br>
+                    비밀번호:<input type="password" name="pw" id=""><br>
+                    <input type="submit" value="제출">
+                    <input type="button" value="회원가입">
+                </form>
+            </div>
+            <div class="bookmark">
+                <h2>즐겨찾기</h2>
+                <a href="http://mis.donga.ac.kr" target="_blank">경영정보학과</a><br>
+                <a href="./gallery.html">갤러리</a><br>
+                <a href="#home">홈이동</a><br>
+            </div>
+        </aside>
+    </section>
+    <footer>
+        copyright@조영준
+        <div class="sns">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-sharp fa-solid fa-envelope"></i>
+        </div>
+    </footer>
+</body>
+</html>
